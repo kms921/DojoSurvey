@@ -1,0 +1,45 @@
+
+@model DojoSurvey.Models.Survey;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/style.css"/>
+</head>
+<body>
+
+
+    <div class="container">
+        
+    <form asp-action="Result" method="POST">
+        <h2>Dojo Survey</h2>
+        <span asp-validation-for="Name"></span>
+        <label asp-for="Name"></label>
+        <input asp-for="Name">  
+        <span asp-validation-for="Location"></span>  
+        <label asp-for="Location"></label>
+        <select asp-for="Location" id="location">
+            <option value="" disabled selected></option>
+            <option value="San Jose">San Jose</option>
+            <option value="Boise">Boise</option>
+            <option value="Bellevue">Bellevue</option>
+            <option value="Dallas">Dallas</option>
+        </select>
+        <label asp-for="Language"></label>
+        <select asp-for="Language" >
+            <option value="" disabled selected></option>
+            <option value="C#">C#</option>
+            <option value="Python">Python</option>
+            <option value="JavaScript">JavaScript</option>
+        </select>
+        <label asp-for="Comment"></label>
+        <textarea asp-for="Comment" cols="100" rows="10" placeholder="Additional comments (optional)"></textarea>
+        <button>Submit</button>
+
+    </form>
+    </div>
+    
+</body>
+</html>

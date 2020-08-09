@@ -1,0 +1,36 @@
+@model DojoSurvey.Models.Survey
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/style.css"/>
+</head>
+<body>
+    <h1>Submitted Info </h1>
+
+    <div class="container">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>@Model.Name</td>
+            </tr>
+            <tr>
+                <td>Dojo Location</td>
+                <td>@Model.Location</td>
+            </tr>
+            <tr>
+                <td>Favorite Language</td>
+                <td>@Model.Language</td>
+            </tr>
+            <tr>
+                <td>Comments</td>
+                <td>@Model.Comment</td>
+            </tr>
+            
+        </table>
+        <input type="button" value="Go Back" class="btn" onclick= "document.location.href='/'";/>
+    </div>
+</body>
+</html>

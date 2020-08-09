@@ -1,0 +1,105 @@
+*{
+    margin: 0px; 
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+
+h1 {
+    text-align: center;
+    padding: 50px; 
+}
+
+nav {
+    text-align: center;
+    padding: 50px; 
+}
+
+table {
+    text-align: left; 
+    margin-left: 220px; 
+    border: solid black 1px; 
+}
+img {
+    width: 110px; 
+}
+td {
+    padding: 5px; 
+}
+form {
+    grid-row: auto;
+    width: 300px; 
+    padding: 10px; 
+    text-align: left; 
+    margin-left: 300px; 
+    display: inline-block; 
+
+}
+
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    padding: 200px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+  #container h4 {
+      margin-left: 250px;
+  }
+
+  table {
+
+      margin-left: 100px; 
+      padding: 30px; 
+  }
+  td{
+    padding: 10px; 
+  }
+
+  .btn
+  { vertical-align: bottom;
+    margin-left: 300px; 
+
+  }
+  .container table {
+    margin-left: 100px; 
+  }
+  
